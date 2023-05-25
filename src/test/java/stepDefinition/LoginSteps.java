@@ -9,6 +9,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.specification.RequestSpecification;
+import utils.APICall;
 import utils.GlobalVariables;
 import utils.SessionVariables;
 
@@ -23,19 +24,19 @@ public class LoginSteps {
 	    pglogin=new LoginUser();
 	    pglogin.setEmail(email);
 	    pglogin.setPassword(password);
-	    requestspec=  given().spec(requestspec).body(pglogin).log().all();
+	    SessionVariables.Password=password;
+	    requestspec= given().spec(requestspec).body(pglogin).log().all();
+	    GlobalVariables.requestspec=requestspec;
 	    
 	}
-	@When("the user calls the post method with expected {string}")
-	public void the_user_calls_the_post_method(String code) {
-		pglogin=requestspec.when().log().all().post("/users/login")
-		.then().log().all().statusCode(Integer.parseInt(code)).extract().as(LoginUser.class);
-	}
 	
-	@Then("verify {string} in its loginpage response body")
-	public void message_in_the_response_body_is_user_account_created_successfully(String message) {
+	
+	@Then("verify {string} {string} in loginpage response body")
+	public void message_in_the_response_body_is_user_account_created_successfully(String code,String message)
+	{
+		pglogin=APICall.verifystatuscode(GlobalVariables.response,code).extract().as(LoginUser.class);
 		Assert.assertEquals(message, pglogin.getMessage()) ;
 		SessionVariables.token= pglogin.getData().getToken();
 
-}
+    }
 }

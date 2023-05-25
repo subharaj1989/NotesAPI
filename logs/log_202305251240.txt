@@ -1,0 +1,95 @@
+Request method:	POST
+Request URI:	https://practice.expandtesting.com/notes/api/users/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "message": null,
+    "success": false,
+    "status": null,
+    "data": null,
+    "email": "aghuioqd@gmail.com",
+    "password": "Hello123$"
+}
+HTTP/1.1 200 OK
+access-control-allow-origin: *
+access-control-allow-credentials: true
+access-control-allow-methods: GET, POST, PUT, DELETE, PATCH
+access-control-allow-headers: Origin, X-Requested-With, Authorization, Content-Type, Accept, X-Auth-Token
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+etag: W/"e0-Wtp5rJUCcHl9qRPZ+2KhvSDr4a8"
+set-cookie: express:sess=eyJmbGFzaCI6e319; path=/; httponly
+set-cookie: express:sess.sig=VlmTeWF7MxWVNoHpFZhhQrnM1HU; path=/; httponly
+date: Thu, 25 May 2023 16:40:55 GMT
+connection: keep-alive
+keep-alive: timeout=5
+transfer-encoding: chunked
+
+{
+    "success": true,
+    "status": 200,
+    "message": "Login successful",
+    "data": {
+        "id": "646e5dfe563906021176450b",
+        "name": "MbcdeghtSit",
+        "email": "aghuioqd@gmail.com",
+        "token": "19664cbd5a6942e19819d4edc01729ff044dff9842304cdf820c89fd4a07597c"
+    }
+}
+Request method:	PATCH
+Request URI:	https://practice.expandtesting.com/notes/api/users/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				x-auth-token=19664cbd5a6942e19819d4edc01729ff044dff9842304cdf820c89fd4a07597c
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "MbcdeghtSit",
+    "phone": "1234567890",
+    "company": "chef",
+    "status": null,
+    "success": false,
+    "message": null,
+    "data": null
+}
+HTTP/1.1 200 OK
+access-control-allow-origin: *
+access-control-allow-credentials: true
+access-control-allow-methods: GET, POST, PUT, DELETE, PATCH
+access-control-allow-headers: Origin, X-Requested-With, Authorization, Content-Type, Accept, X-Auth-Token
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+etag: W/"c5-82FvdOg1JrP2d+I2hlAKxM9tyUc"
+set-cookie: express:sess=eyJmbGFzaCI6e319; path=/; httponly
+set-cookie: express:sess.sig=VlmTeWF7MxWVNoHpFZhhQrnM1HU; path=/; httponly
+date: Thu, 25 May 2023 16:40:56 GMT
+connection: keep-alive
+keep-alive: timeout=5
+transfer-encoding: chunked
+
+{
+    "success": true,
+    "status": 200,
+    "message": "Profile updated successful",
+    "data": {
+        "id": "646e5dfe563906021176450b",
+        "name": "MbcdeghtSit",
+        "email": "aghuioqd@gmail.com",
+        "phone": "1234567890",
+        "company": "chef"
+    }
+}

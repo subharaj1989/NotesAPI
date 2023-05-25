@@ -1,0 +1,33 @@
+Request method:	POST
+Request URI:	https://practice.expandtesting.com/notes/api/users/forgot-password
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		accept=application/json
+				Content-Type=text/plain; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+abc@mailsac.com
+HTTP/1.1 400 Bad Request
+access-control-allow-origin: *
+access-control-allow-credentials: true
+access-control-allow-methods: GET, POST, PUT, DELETE, PATCH
+access-control-allow-headers: Origin, X-Requested-With, Authorization, Content-Type, Accept, X-Auth-Token
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+etag: W/"4c-2CHdrZOfnaVxbkWhhDN4H2L/4l8"
+set-cookie: express:sess=eyJmbGFzaCI6e319; path=/; httponly
+set-cookie: express:sess.sig=VlmTeWF7MxWVNoHpFZhhQrnM1HU; path=/; httponly
+date: Thu, 25 May 2023 16:31:25 GMT
+connection: keep-alive
+keep-alive: timeout=5
+transfer-encoding: chunked
+
+{
+    "success": false,
+    "status": 400,
+    "message": "A valid email address is required"
+}

@@ -1,0 +1,46 @@
+Request method:	POST
+Request URI:	https://practice.expandtesting.com/notes/api/users/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "abcdegth",
+    "email": "aghuio@gmail.com",
+    "password": "Hello123$",
+    "success": null,
+    "status": false,
+    "message": null,
+    "data": null
+}
+HTTP/1.1 201 Created
+access-control-allow-origin: *
+access-control-allow-credentials: true
+access-control-allow-methods: GET, POST, PUT, DELETE, PATCH
+access-control-allow-headers: Origin, X-Requested-With, Authorization, Content-Type, Accept, X-Auth-Token
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+etag: W/"a1-z2DopLoAyiIUDpNZqdbwhdUWUOA"
+set-cookie: express:sess=eyJmbGFzaCI6e319; path=/; httponly
+set-cookie: express:sess.sig=VlmTeWF7MxWVNoHpFZhhQrnM1HU; path=/; httponly
+date: Wed, 24 May 2023 18:54:28 GMT
+connection: keep-alive
+keep-alive: timeout=5
+transfer-encoding: chunked
+
+{
+    "success": true,
+    "status": 201,
+    "message": "User account created successfully",
+    "data": {
+        "id": "646e5d645639060211764508",
+        "name": "abcdegth",
+        "email": "aghuio@gmail.com"
+    }
+}

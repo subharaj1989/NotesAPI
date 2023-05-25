@@ -5,9 +5,12 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import utils.APICall;
 import utils.GlobalVariables;
 
 import static io.restassured.RestAssured.given;
+
+import org.junit.Assert;
 
 public class UpdateProfileSteps {
 
@@ -22,22 +25,20 @@ public class UpdateProfileSteps {
 		pgupdate.setName(name);
 		pgupdate.setPhone(phone);
 		pgupdate.setCompany(company);
+		GlobalVariables.requestspec=given().spec(requestspec).body(pgupdate).log().all();
 		
 		
 	}
 	
-	@When("the user calls the post method")
-	public void the_user_calls_post()
-	{
-		r=requestspec.body(pgupdate).when().log().all().patch("/users/profile");
-	}
 	
-	@Then("verify {string} {string} its updateprofile response body")
+	
+	@Then("verify {string} {string} in updateprofile response body")
 	public void verify_message(String statuscode,String message)
 	{
-		pgupdate=r.then().log().all().statusCode(Integer.parseInt(statuscode)).extract().as(UpdateUser.class);
+		pgupdate=APICall.verifystatuscode(GlobalVariables.response, statuscode).extract().as(UpdateUser.class);
 		System.out.println(pgupdate.getData().getName());
 		System.out.println(pgupdate.getMessage());
+		Assert.assertEquals(message, pgupdate.getMessage());
 		
 	}
 }

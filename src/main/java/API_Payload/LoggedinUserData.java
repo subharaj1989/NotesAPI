@@ -7,6 +7,8 @@ public class LoggedinUserData {
 	private String email;
 	private String name;
 	private String token;
+	private String phone;
+	private String company;
     
     public String getPhone() {
 		return phone;
@@ -20,8 +22,7 @@ public class LoggedinUserData {
 	public void setCompany(String company) {
 		this.company = company;
 	}
-	public String phone;
-    public String company;
+	
 	
     public String getId() {
 		return id;

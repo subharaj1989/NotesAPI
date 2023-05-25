@@ -13,6 +13,8 @@ public class SessionVariables {
 
 	public static String email;
 	public static String token;
+	public static String newPassword;
+	public static String newPassword_token;
 
 	
 }

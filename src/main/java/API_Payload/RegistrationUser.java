@@ -3,12 +3,27 @@ package API_Payload;
 public class RegistrationUser {
 
 	String name ;
-	String id;
-	public String getId() {
-		return id;
+	String email;
+	String password;
+	
+	String success;
+	boolean status;
+	
+	String message;
+	LoggedinUserData data;
+	
+	public boolean isStatus() {
+		return status;
 	}
-	public void setId(String id) {
-		this.id = id;
+	public void setStatus(boolean status) {
+		this.status = status;
+	}
+	
+	public LoggedinUserData getData() {
+		return data;
+	}
+	public void setData(LoggedinUserData data) {
+		this.data = data;
 	}
 	public String getMessage() {
 		return message;
@@ -16,7 +31,7 @@ public class RegistrationUser {
 	public void setMessage(String message) {
 		this.message = message;
 	}
-	String message;
+	
 	public String getName() {
 		return name;
 	}
@@ -35,6 +50,11 @@ public class RegistrationUser {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	String email;
-	String password;
+	
+	public String getSuccess() {
+		return success;
+	}
+	public void setSuccess(String success) {
+		this.success = success;
+	}
 }

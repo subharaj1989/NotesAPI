@@ -1,0 +1,87 @@
+Request method:	POST
+Request URI:	https://practice.expandtesting.com/notes/api/users/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "message": null,
+    "success": false,
+    "status": null,
+    "data": null,
+    "email": "sunset@mailsac.com",
+    "password": "Hello123$"
+}
+HTTP/1.1 200 OK
+access-control-allow-origin: *
+access-control-allow-credentials: true
+access-control-allow-methods: GET, POST, PUT, DELETE, PATCH
+access-control-allow-headers: Origin, X-Requested-With, Authorization, Content-Type, Accept, X-Auth-Token
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+etag: W/"e0-K2qeJrJoc7dBxLrakGeuUtAbvBs"
+set-cookie: express:sess=eyJmbGFzaCI6e319; path=/; httponly
+set-cookie: express:sess.sig=VlmTeWF7MxWVNoHpFZhhQrnM1HU; path=/; httponly
+date: Thu, 25 May 2023 19:23:54 GMT
+connection: keep-alive
+keep-alive: timeout=5
+transfer-encoding: chunked
+
+{
+    "success": true,
+    "status": 200,
+    "message": "Login successful",
+    "data": {
+        "id": "646fb5016b431f021151b56c",
+        "name": "Meenakumari",
+        "email": "sunset@mailsac.com",
+        "token": "36180b21da264e9e87bbc3816e0317d6421db682ec924e59ae19201206b4e0d3"
+    }
+}
+Request method:	DELETE
+Request URI:	https://practice.expandtesting.com/notes/api/users/logout
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				x-auth-token=36180b21da264e9e87bbc3816e0317d6421db682ec924e59ae19201206b4e0d3
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "message": null,
+    "success": false,
+    "status": null,
+    "data": null,
+    "email": "sunset@mailsac.com",
+    "password": "Hello123$"
+}
+HTTP/1.1 200 OK
+access-control-allow-origin: *
+access-control-allow-credentials: true
+access-control-allow-methods: GET, POST, PUT, DELETE, PATCH
+access-control-allow-headers: Origin, X-Requested-With, Authorization, Content-Type, Accept, X-Auth-Token
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+etag: W/"4f-7fu1YLvqWAlBLt3rT+vlZvUfugw"
+set-cookie: express:sess=eyJmbGFzaCI6e319; path=/; httponly
+set-cookie: express:sess.sig=VlmTeWF7MxWVNoHpFZhhQrnM1HU; path=/; httponly
+date: Thu, 25 May 2023 19:23:55 GMT
+connection: keep-alive
+keep-alive: timeout=5
+transfer-encoding: chunked
+
+{
+    "success": true,
+    "status": 200,
+    "message": "User has been successfully logged out"
+}

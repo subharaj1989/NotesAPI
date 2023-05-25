@@ -1,0 +1,40 @@
+Request method:	POST
+Request URI:	https://practice.expandtesting.com/notes/api/users/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "message": null,
+    "success": false,
+    "status": null,
+    "data": null,
+    "email": "aghuioqd@gmail.com",
+    "password": "Hello123$"
+}
+HTTP/1.1 401 Unauthorized
+access-control-allow-origin: *
+access-control-allow-credentials: true
+access-control-allow-methods: GET, POST, PUT, DELETE, PATCH
+access-control-allow-headers: Origin, X-Requested-With, Authorization, Content-Type, Accept, X-Auth-Token
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+etag: W/"4e-wFVQo8i7laSDLBCYzUhef+OME+4"
+set-cookie: express:sess=eyJmbGFzaCI6e319; path=/; httponly
+set-cookie: express:sess.sig=VlmTeWF7MxWVNoHpFZhhQrnM1HU; path=/; httponly
+date: Thu, 25 May 2023 18:44:25 GMT
+connection: keep-alive
+keep-alive: timeout=5
+transfer-encoding: chunked
+
+{
+    "success": false,
+    "status": 401,
+    "message": "Incorrect email address or password"
+}

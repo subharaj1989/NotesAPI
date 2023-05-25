@@ -1,0 +1,80 @@
+Request method:	POST
+Request URI:	https://practice.expandtesting.com/notes/api/users/forgot-password
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "abc@mailsac.com",
+    "token": null,
+    "success": false,
+    "status": null,
+    "message": null,
+    "newPassword": null
+}
+HTTP/1.1 200 OK
+access-control-allow-origin: *
+access-control-allow-credentials: true
+access-control-allow-methods: GET, POST, PUT, DELETE, PATCH
+access-control-allow-headers: Origin, X-Requested-With, Authorization, Content-Type, Accept, X-Auth-Token
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+etag: W/"8f-xTVgOyJJf5U50nZU9YqPuk41GiM"
+set-cookie: express:sess=eyJmbGFzaCI6e319; path=/; httponly
+set-cookie: express:sess.sig=VlmTeWF7MxWVNoHpFZhhQrnM1HU; path=/; httponly
+date: Thu, 25 May 2023 17:16:06 GMT
+connection: keep-alive
+keep-alive: timeout=5
+transfer-encoding: chunked
+
+{
+    "success": true,
+    "status": 200,
+    "message": "Password reset link successfully sent to abc@mailsac.com. Please verify by clicking on the given link"
+}
+Request method:	POST
+Request URI:	https://practice.expandtesting.com/notes/api/users/reset-password
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": null,
+    "token": "848901ee714e49aba4b6d2bcdebeb098f121ecf1d4ce4772b1dd3ef397140243",
+    "success": false,
+    "status": null,
+    "message": null,
+    "newPassword": null
+}
+HTTP/1.1 400 Bad Request
+access-control-allow-origin: *
+access-control-allow-credentials: true
+access-control-allow-methods: GET, POST, PUT, DELETE, PATCH
+access-control-allow-headers: Origin, X-Requested-With, Authorization, Content-Type, Accept, X-Auth-Token
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+etag: W/"5b-gpcTDlDwOoOqn4a9Kh9XAjgtqkQ"
+set-cookie: express:sess=eyJmbGFzaCI6e319; path=/; httponly
+set-cookie: express:sess.sig=VlmTeWF7MxWVNoHpFZhhQrnM1HU; path=/; httponly
+date: Thu, 25 May 2023 17:16:10 GMT
+connection: keep-alive
+keep-alive: timeout=5
+transfer-encoding: chunked
+
+{
+    "success": false,
+    "status": 400,
+    "message": "New password must be between 6 and 30 characters"
+}

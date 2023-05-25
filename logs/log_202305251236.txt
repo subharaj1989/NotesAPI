@@ -1,0 +1,46 @@
+Request method:	POST
+Request URI:	https://practice.expandtesting.com/notes/api/users/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "message": null,
+    "success": false,
+    "status": null,
+    "data": null,
+    "email": "monica@gmail.com",
+    "password": "Hello123$"
+}
+HTTP/1.1 200 OK
+access-control-allow-origin: *
+access-control-allow-credentials: true
+access-control-allow-methods: GET, POST, PUT, DELETE, PATCH
+access-control-allow-headers: Origin, X-Requested-With, Authorization, Content-Type, Accept, X-Auth-Token
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+etag: W/"dd-8QxMs4cZOGedkDOexq04nZvV7U0"
+set-cookie: express:sess=eyJmbGFzaCI6e319; path=/; httponly
+set-cookie: express:sess.sig=VlmTeWF7MxWVNoHpFZhhQrnM1HU; path=/; httponly
+date: Thu, 25 May 2023 16:36:47 GMT
+connection: keep-alive
+keep-alive: timeout=5
+transfer-encoding: chunked
+
+{
+    "success": true,
+    "status": 200,
+    "message": "Login successful",
+    "data": {
+        "id": "646bac925639060211763631",
+        "name": "MonicaBing",
+        "email": "monica@gmail.com",
+        "token": "82e7e093f44846759f747a70c73bfb042bf80c488f074cf58f1cd014d67dc77c"
+    }
+}

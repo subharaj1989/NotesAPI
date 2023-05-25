@@ -1,6 +1,7 @@
 package utils;
 
 import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
@@ -8,6 +9,7 @@ public class GlobalVariables {
 
 	public static RequestSpecification requestspec;
 	public static ResponseSpecification responsespec;
+	public static Response response;
 	
 	public static void buildBaseUri()
 	{

@@ -1,0 +1,175 @@
+Request method:	POST
+Request URI:	https://practice.expandtesting.com/notes/api/users/forgot-password
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		accept=application/json
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+abc@mailsac.com
+HTTP/1.1 415 Unsupported Media Type
+x-powered-by: Express
+content-type: text/html; charset=utf-8
+content-encoding: gzip
+etag: W/"1a36-DrwAE6S8T2RUy6ymR1ksPStnZ1c"
+date: Thu, 25 May 2023 16:27:51 GMT
+connection: keep-alive
+keep-alive: timeout=5
+transfer-encoding: chunked
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Internal Server Error</title>
+    <meta name="description" content="Internal Server Error |Practice WebApp"/>
+    <link rel="shortcut icon" _="_" href="/assets/images/favicon.png" type="image/png"/>
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" _="_" href="/assets/css/main.css?v=2ba5a16b"/>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"/>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-90GRT6N40B"/>
+    <script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'G-90GRT6N40B');
+	</script>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <header class="navbar navbar-expand-md navbar-dark sticky-top main-navbar">
+      <nav class="container flex-wrap flex-md-nowrap" aria-label="Main navigation">
+        <a shape="rect" class="navbar-brand p-0 me-2 logo_title" href="/" aria-label="SUT">
+          <img class="d-block my-1" src="/assets/images/logo.svg" alt="Practice automation website, demos, examples web UI and API testing with Cypress, Playwright, Selenium, WebdriverIO, Puppeteer, and Postman." width="45" height="45" role="img"/>
+        </a>
+        <title>SUT</title>
+ Practice
+	    
+	
+	            <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <svg width="32" height="32" class="bi" fill="currentColor" viewbox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </button>
+        <div class="navbar-collapse collapse" id="main-navbar">
+          <ul class="navbar-nav flex-row flex-wrap pt-2 py-md-0">
+            <li class="nav-item dropdown col-6 col-md-auto">
+              <a shape="rect" class="nav-link dropdown-toggle" id="examples-dropdown" href="/#examples" role="button" data-bs-toggle="dropdown" aria-expanded="false">Demos</a>
+              <ul class="dropdown-menu" aria-labelledby="examples-dropdown">
+                <li>
+                  <a shape="rect" class="dropdown-item" href="/#examples">Examples</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider"/>
+                </li>
+                <li>
+                  <a shape="rect" class="dropdown-item" href="/#apps">Apps</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider"/>
+                </li>
+                <li>
+                  <a shape="rect" class="dropdown-item" href="/#api">APIs</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider"/>
+                </li>
+                <li>
+                  <a shape="rect" class="dropdown-item" href="/#assertions">Assertions</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider"/>
+                </li>
+                <li>
+                  <a shape="rect" class="dropdown-item" href="/#reports">Reports</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item col-6 col-md-auto">
+              <a shape="rect" class="nav-link p-2" href="/#tools">Tools</a>
+            </li>
+            <li class="nav-item col-6 col-md-auto">
+              <a shape="rect" class="nav-link p-2" href="/about">About</a>
+            </li>
+            <li class="nav-item col-6 col-md-auto">
+              <a shape="rect" class="nav-link p-2" href="/contact">Contact</a>
+            </li>
+          </ul>
+          <hr class="d-md-none text-white-50"/>
+          <ul class="navbar-nav flex-row flex-wrap ms-md-auto"/>
+          <a shape="rect" class="btn btn-sut d-lg-inline-block my-2 my-md-0 ms-md-3" href="https://expandtesting.com/formations/">Automation Training</a>
+        </div>
+      </nav>
+    </header>
+    <main class="flex-shrink-0 py-3">
+      <div class="container">
+        <div class="row">
+          <div id="flash-message">
+            <div class="alert alert-danger alert-dismissible fade show" id="flash" role="alert">
+              <b>UnsupportedMediaTypeError: unsupported charset "ISO-8859-1"</b>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-layout">
+        <div class="container">
+          <h1>Internal Server Error</h1>
+          <p>Oops! Something went wrong</p>
+        </div>
+      </div>
+    </main>
+    <style>
+	  #back-to-top {
+	    border: 1px solid #ccc;
+	    background: #ec7211;
+	  }
+	</style>
+    <footer class="footer mt-auto bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center"/>
+        </div>
+        <div class="copyright bg-footer">
+          <div class="border-top border-2">
+            <div class="row mt-3">
+              <div class="col-12 text-center">
+                <h5>Automation Practice WebApp</h5>
+                <p>
+Version: 2ba5a16b | Copyright                   <a shape="rect" class="my-link" href="https://expandtesting.com/" target="_blank" rel="noopener">Expand Testing</a>
+ 2023                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/assets/plugins/back-to-top/back-to-top.min.js"/>
+    <script defer="defer">
+	  document.addEventListener("DOMContentLoaded", function () {
+	    addBackToTop({
+	      diameter: 50,
+	      //backgroundColor: 'rgb(255,188,59)',
+	      textColor: '#fff'
+	    })
+	
+	  });
+	</script>
+    <script type="application/ld+json">[{"@context":"https://schema.org","@type":"Product","image":"https://practice.expandtesting.com/assets/images/logo.svg","name":"Practice Automation Website for UI and API Testing","url":"https://practice.expandtesting.com/","description":"Practice automation website with demos and examples for UI and API testing using Cypress, Playwright, Selenium, WebdriverIO, Puppeteer, and Postman.","aggregateRating":{"@type":"AggregateRating","ratingValue":4.5,"reviewCount":698,"bestRating":"5","worstRating":"0"}}]</script>
+    <script src="/assets/js/main.js"/>
+    <script src="/socket.io/socket.io.min.js"/>
+    <script>
+		window.onload = function () {
+			const currentURL = window.location.href;
+			const socket = io();
+			const userData = { page: currentURL };
+			socket.emit('pageChange', userData);
+		}
+	</script>
+  </body>
+</html>
